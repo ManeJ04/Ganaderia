@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Color de fondo */
+}
+
+/* Estilo del encabezado */
+header {
+    width: 100%;
+    background-color: #ffff99; /* Color amarillo */
+    text-align: center;
+    padding: 30px 0;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5rem; /* Tamaño del título */
+    color: #666; /* Color del texto */
+}
+
+
+/* Estilos de los botones */
+.back-button, .home-button {
+    position: absolute;
+    top: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button {
+    left: 20px; /* Posición del botón 'Regresar' */
+}
+
+.home-button {
+    right: 20px; /* Posición del botón 'Inicio' */
+}
+
+.back-button img, .home-button img {
+    width: 50px;
+    height: auto;
+}
+
+/* Estilo para el contenedor principal */
+/* Estilo para el contenedor principal */
+.container {
+    margin-top: 150px; /* Reducido para mover el formulario más arriba */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Maxima anchura del formulario */
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"], input[type="number"], input[type="date"], select {
+    width: 100%;
+    padding: 12px; /* Aumentado padding para mejorar el tamaño */
+    margin-top: 5px;
+    margin-bottom: 20px; /* Espaciado inferior mayor */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes más redondeados */
+    box-sizing: border-box;
+    font-size: 16px; /* Aumentado tamaño de fuente */
+    background-color: #f9f9f9; /* Fondo gris claro para los campos */
+    transition: all 0.3s ease;
+}
+
+/* Estilo para el botón de envío */
+input[type="submit"] {
+    background-color: #4CAF50; /* Color del botón */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Color del botón al pasar el mouse */
+}

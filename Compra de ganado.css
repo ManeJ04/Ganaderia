@@ -1,0 +1,168 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Asegura que el contenido ocupe toda la altura de la ventana */
+}
+
+/* Estilo del encabezado */
+header {
+    width: 100%;
+    background-color: #ffff99; /* Color amarillo */
+    text-align: center;
+    padding: 30px 0;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5rem; /* Tamaño del título */
+    color: #666; /* Color del texto */
+}
+
+/* Botones en el encabezado */
+.back-button, .back-image-button {
+    position: absolute;
+    top: 15px; /* Ajusta la posición */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button {
+    left: 20px;
+}
+
+.back-image-button {
+    right: 20px;
+}
+
+.back-button img, .back-image-button img {
+    width: 50px; /* Tamaño de los iconos */
+    height: auto;
+}
+
+/* Contenedor principal que engloba ambas mitades */
+.main-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 500%;
+    height: 500%; /* Ocupa toda la pantalla */
+    box-sizing: border-box;
+    gap: 10px; /* Espaciado entre las columnas */
+}
+
+/* Estilo para los contenedores hijos (container y Fierro) */
+.half-screen {
+    width: 50%; /* Cada div ocupa la mitad de la pantalla */
+    height: 100%; /* Altura completa de la pantalla */
+    display: flex;
+    justify-content: center; /* Centrar contenido horizontalmente dentro del div */
+    align-items: center; /* Centrar contenido verticalmente dentro del div */
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde para distinguir las mitades */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+}
+
+/* Contenido específico del div Fierro */
+.Fierro {
+    display: flex;
+    margin-top: 50px; /* Reduce el margen superior para mover el formulario más arriba */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal (formulario y contenido) */
+.container {
+    display: flex;
+    margin-top: 50px; /* Reduce el margen superior para mover el formulario más arriba */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Formulario en la columna izquierda */
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    justify-content: center;
+    gap: 15px; /* Espacio uniforme entre los campos */
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    font-size: 16px; /* Tamaño de texto aumentado */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block; /* Hace que las etiquetas estén en línea con los campos */
+}
+
+/* Alineación y tamaños consistentes para los campos de entrada */
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], select, input[type="date"] {
+    width: 100%; /* Asegura que los campos ocupen todo el ancho */
+    padding: 12px; /* Tamaño de padding ajustado */
+    margin: 5px 0; /* Espacio entre los campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Tamaño de fuente reducido */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
+}
+
+/* Estilo del campo de fecha */
+input[type="date"] {
+    font-size: 16px; /* Aumentamos el tamaño de la fuente en el campo de fecha */
+    padding: 10px;
+}
+
+/* Estilo del botón de submit */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Botón de submit ocupa todo el ancho disponible */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.Principal{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    grid-template-columns: 50% 50%; /* Dos columnas, cada una ocupa la mitad */
+    grid-template-rows: auto; /* Altura automática según el contenido */
+}
+
+img {
+    width: 50%; /* La imagen ocupará el 50% del ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
